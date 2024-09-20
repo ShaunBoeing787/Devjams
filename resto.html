@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Order Page</title>
+    <link rel="stylesheet" href="resto.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>ENZO</h1>
+        <div id="restaurants">
+            <div class="restaurant">
+                <h2>Pepsi</h2>
+                <p>750ml</p>
+                <button onclick="addToCart('Pepsi', 'Pizza', 12)"> ₹40</button>
+            </div>
+            <div class="restaurant">
+                <h2>Chicken Popcorn Burger</h2>
+                <p>Tasty burgers</p>
+                <button onclick="addToCart('Burger King', 'Burger', 8)">₹80</button>
+            </div>
+            <div class="restaurant">
+                <h2>Protein Bar</h2>
+                <p>Muscle Growth</p>
+                <button onclick="addToCart('Sushi World', 'Sushi', 15)">₹120</button>
+            </div>
+        </div>
+
+        <h2>Your Cart</h2>
+        <div id="cart">
+            <p>No items in cart</p>
+        </div>
+        <button class="checkout-btn" onclick="window.location.href='mycart.html';">Checkout</button>
+    </div>
+
+    <script src="resto.js"></script>
+</body>
+</html>
